@@ -1,0 +1,114 @@
+@media (max-width: 992px) {
+
+/* ============================================================ */
+
+    header {
+        height: auto;
+    }
+
+    .header_h1 > h1 {
+        font-size: 50px;
+    }
+
+    .header_h3 {
+        margin-top: 60px;
+    }
+
+    .header_h3 > h3 {
+        font-size: 30px;
+    }
+
+    header .btn-yellow {
+        margin-bottom: 75px;
+    }
+
+/* ============================================================ */
+
+    .content:nth-of-type(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .content:nth-of-type(odd) > div:nth-of-type(1) {
+        text-align: left;
+    }
+
+    .content > div:nth-of-type(3) {
+        display: none;
+    }
+
+/* ============================================================ */
+
+}
+
+@media (max-width: 768px) {
+
+/* ============================================================ */
+
+    .header_h1 > h1 {
+        font-size: 40px;
+    }
+
+/* ============================================================ */
+
+    .content:nth-of-type(odd),
+    .content:nth-of-type(even) {
+        flex-direction: column-reverse;
+    }
+
+    .content:nth-of-type(odd) > div:nth-of-type(1),
+    .content:nth-of-type(even) > div:nth-of-type(1) {
+        align-items: center;
+        text-align: center;
+    }
+
+    .content:nth-of-type(odd) > div:nth-of-type(1) > p,
+    .content:nth-of-type(even) > div:nth-of-type(1) > p {
+        text-align: justify;
+    }
+
+    .content > div:nth-of-type(2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url(../img/line.png) 50% 50% / 100% 7px no-repeat;
+    }
+
+    .content:first-child > div:nth-of-type(2) {
+        background: url(../img/line.png) 50% 50% /  100% 7px no-repeat;
+    }
+    
+    .content:last-child > div:nth-of-type(2) {
+        background: url(../img/line.png) 50% 50% /  100% 7px no-repeat;
+    }
+
+/* ============================================================ */
+
+    .block_logo .col {
+        flex-wrap: wrap;
+    }
+
+    .block_logo .col > img {
+        margin: 20px 20px;
+    }
+
+/* ============================================================ */
+
+}
+
+@media (max-width: 576px) {
+
+    .header_h1 > h1 {
+        font-size: 30px;
+    }
+
+    .header_h3 > h3 {
+        font-size: 25px;
+    }
+
+/* ============================================================ */
+
+    .block_logo .col > img {
+        margin: 20px 40px;
+    }
+
+}
